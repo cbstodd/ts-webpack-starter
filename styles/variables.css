@@ -1,8 +1,8 @@
 :root {
-  --main-font: "IBM Plex Sans", sans-serif;
-  --cond-font: "IBM Plex Sans Condensed", sans-serif;
-  --serif-font: "IBM Plex Serif", serif;
-  --mono-font: "IBM Plex Mono", monospace;
+  --main-font: "IBM Plex Sans";
+  --cond-font: "IBM Plex Sans Condensed";
+  --serif-font: "IBM Plex Serif";
+  --mono-font: "IBM Plex Mono";
 
   --darker: #222;
   --dark: #555;
