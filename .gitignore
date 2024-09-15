@@ -1,0 +1,10 @@
+# Editors:
+.idea
+.vscode
+.vscodium
+.fleet
+
+# Project Files:
+node_modules
+.env
+.env.prod
