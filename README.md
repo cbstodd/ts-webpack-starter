@@ -1,7 +1,7 @@
 
 # TypeScript Webpack Starter Application
 
-[Repository](https://github.com/cbstodd)
+[Repository]( https://github.com/cbstodd/ts-webpack-starter.git)
 
 TODO:
 
