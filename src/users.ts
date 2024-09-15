@@ -33,4 +33,8 @@ export const users: User[] = [
   },
 ];
 
-module.exports = { User, users };
+
+export const etone: string[] = ['Andy', 'Colin', 'Marshall', 'Rick', 'Tommy'];
+
+
+module.exports = { User, users, etone };

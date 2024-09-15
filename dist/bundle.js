@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst users_1 = __webpack_require__(/*! ./users */ \"./src/users.ts\");\nconst allUsers = users_1.users;\nconsole.table(allUsers);\n\n\n//# sourceURL=webpack://ts-webpack-starter/./src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst users_1 = __webpack_require__(/*! ./users */ \"./src/users.ts\");\nconst allUsers = users_1.users;\nconst allUserNames = users_1.etone.filter((name) => {\n    if (name === 'Colin' || name === 'Tommy') {\n        const index = users_1.etone.indexOf(name);\n        console.log(`Filtered index of ${name} is ${index}`);\n    }\n    else {\n        console.info(`${name} is not Colin or Tommy`);\n    }\n});\nallUserNames;\n\n\n//# sourceURL=webpack://ts-webpack-starter/./src/index.ts?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\ncons
   \**********************/
 /***/ ((module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.users = exports.User = void 0;\nclass User {\n    constructor(firstName, lastName, age, updatedAt) {\n        this.firstName = firstName;\n        this.lastName = lastName;\n        this.age = age;\n        this.updatedAt = updatedAt;\n    }\n}\nexports.User = User;\nconst currentDate = Date.now();\nfunction createRandomDate(maxNum = 100) {\n    return (Date.now() - Math.floor((Math.random() * maxNum) + 1));\n}\nexports.users = [\n    {\n        firstName: \"Colin\",\n        lastName: \"Stodd\",\n        age: 41,\n        updatedAt: currentDate\n    },\n    {\n        firstName: \"Henry\",\n        lastName: \"Rothchild\",\n        age: 40,\n        updatedAt: createRandomDate()\n    },\n    {\n        firstName: \"Gunner\",\n        lastName: \"Hathaway\",\n        age: 69,\n        updatedAt: createRandomDate(1000)\n    },\n];\nmodule.exports = { User, users: exports.users };\n\n\n//# sourceURL=webpack://ts-webpack-starter/./src/users.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.etone = exports.users = exports.User = void 0;\nclass User {\n    constructor(firstName, lastName, age, updatedAt) {\n        this.firstName = firstName;\n        this.lastName = lastName;\n        this.age = age;\n        this.updatedAt = updatedAt;\n    }\n}\nexports.User = User;\nconst currentDate = Date.now();\nfunction createRandomDate(maxNum = 100) {\n    return (Date.now() - Math.floor((Math.random() * maxNum) + 1));\n}\nexports.users = [\n    {\n        firstName: \"Colin\",\n        lastName: \"Stodd\",\n        age: 41,\n        updatedAt: currentDate\n    },\n    {\n        firstName: \"Henry\",\n        lastName: \"Rothchild\",\n        age: 40,\n        updatedAt: createRandomDate()\n    },\n    {\n        firstName: \"Gunner\",\n        lastName: \"Hathaway\",\n        age: 69,\n        updatedAt: createRandomDate(1000)\n    },\n];\nexports.etone = ['Andy', 'Colin', 'Marshall', 'Rick', 'Tommy'];\nmodule.exports = { User, users: exports.users, etone: exports.etone };\n\n\n//# sourceURL=webpack://ts-webpack-starter/./src/users.ts?");
 
 /***/ })
 
